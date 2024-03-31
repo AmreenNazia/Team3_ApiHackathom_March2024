@@ -1,0 +1,55 @@
+{
+"PostUser":{
+  "userComments": "Test Data",
+  "userEduPg": "SDET",
+  "userEduUg": "Abcsdef",
+  "userFirstName": "Madhavi",
+  "userId": "string",
+  "userLastName": "Patil",
+  "userLinkedinUrl": "https://www.linkedin.com/in/madhavi-patil",
+  "userLocation": "Texas",
+  "userLogin": {
+    "loginStatus": "string",
+    "password": "dhijksf12!",
+    "roleIds": [
+      "string"
+    ],
+    "status": "Active",
+    "userLoginEmail": "madhavi.patillws2019@gmail.com"
+  },
+  "userMiddleName": "afdfsfdsf",
+  "userPhoneNumber": 5454367724,
+  "userRoleMaps": [
+    {
+      "roleId": "R03",
+      "userRoleStatus": "Active"
+    }
+  ],
+  "userTimeZone": "CST",
+  "userVisaStatus": "H4-EAD"
+},
+
+"PostUserInvalid":{
+  "userComments": "invalidData",
+  "userEduPg": "BE",
+  "userEduUg": "Engin",
+  "userFirstName": "Nupur",
+  "userLinkedinUrl": "https://www.linkedin.com/in/nupur",
+  "userLogin": {
+    "loginStatus": "string",
+    "password": "string",
+     "userLoginEmail": "nupur@gmail.com"
+  },
+  "userMiddleName": "fdfhsgfdgg",
+  "userPhoneNumber": 1243,
+  "userRoleMaps": [
+    {
+      "roleId": "R03",
+      "userRoleStatus": "Active"
+    }
+  ],
+  "userTimeZone": "EST",
+  "userVisaStatus": "H4"
+}
+
+}
