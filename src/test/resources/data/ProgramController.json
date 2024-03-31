@@ -1,6 +1,7 @@
 {
 	"CreateProgramId": {
 		"programDescription": "TestingAPI",
+ 
 		"programName": "ApiAutoamatorsssss",
 		"programStatus": "Active"
 	},
@@ -12,6 +13,19 @@
 	"UpdateProgramName": {
 		"programDescription": "TestingRestAssuyyredsqsts",
 		"programName": "ApiAutoamators848586000",
+ 
+		"programName": "ApiAutoamatorsss",
+		"programStatus": "Active"
+	},
+	"UpdateProgramId": {
+		"programDescription": "TestingAPIRestAss",
+		"programName": "Api3211Automator56500",
+		"programStatus": "Active"
+	},
+	"UpdateProgramName": {
+		"programDescription": "TestingRestAssuyyredsqs",
+		"programName": "ApiAutoamators8485860",
+ 
 		"programStatus": "Active"
 	},
 	"ExistingProgramName": {
