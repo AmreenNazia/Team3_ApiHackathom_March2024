@@ -1,0 +1,71 @@
+{
+	"UpdateUser": {
+		"userComments": "user with role-student",
+		"userEduPg": "MS",
+		"userEduUg": "BE",
+		"userFirstName": "Mahesh",
+		"userId": "U425",
+		"userLastName": "Rajesh",
+		"userLinkedinUrl": "https://www.linkedin.com/in/mahesh",
+		"userLocation": "NC",
+		"userLoginEmail": "mahesh97@gmal.com",
+		"userMiddleName": "s",
+		"userPhoneNumber": 9878347891,
+		"userTimeZone": "EST",
+		"userVisaStatus": "GC-EAD"
+	},
+	"UpdateUserRoleStatus": {
+		"roleId": "R03",
+		"userRoleStatus": "Active"
+	},
+	"UpdateUserRoleId": {
+		"userRoleList": [
+			"R03"
+		]
+	},
+	"UserRoleProgramBatch": {
+		"programId": 16412,
+		"roleId": "R03",
+		"userId": "U425",
+		"userRoleProgramBatches": [
+			{
+				"batchId": 8694,
+				"userRoleProgramBatchStatus": "Active"
+			}
+		]
+	},
+	"UpdateUserLoginStatus": {
+		"loginStatus": "Active",
+		"password": "liv@123",
+		"roleIds": [
+			"R02"
+		],
+		"status": "Active",
+		"userLoginEmail": "mahesh97@gmail.com"
+	},
+	"UserRoleId": {
+		"userRoleList": [
+			"R02"
+		]
+	},
+	"UserRoleProgramBatchInvalid": {
+		"programId": 17118,
+		"roleId": "R03",
+		"userId": "U103",
+		"userRoleProgramBatches": [
+			{
+				"batchId": 8939,
+				"userRoleProgramBatchStatus": "Active"
+			}
+		]
+	},
+	"UserLoginStatus": {
+		"loginStatus": "Active",
+		"password": "liv@123",
+		"roleIds": [
+			"R03"
+		],
+		"status": "Active",
+		"userLoginEmail": "mahesh92@gmail.com"
+	}
+}

@@ -1,0 +1,106 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"type": "object",
+	"properties": {
+		"userComments": {
+			"type": "string"
+		},
+		"userEduPg": {
+			"type": "string"
+		},
+		"userEduUg": {
+			"type": "string"
+		},
+		"userFirstName": {
+			"type": "string"
+		},
+		"userLastName": {
+			"type": "string"
+		},
+		"userLinkedinUrl": {
+			"type": "string"
+		},
+		"userLocation": {
+			"type": "string"
+		},
+		"userLogin": {
+			"type": "object",
+			"properties": {
+				"loginStatus": {
+					"type": "string"
+				},
+				"password": {
+					"type": "string"
+				},
+				"roleIds": {
+					"type": "array",
+					"items": [
+						{
+							"type": "string"
+						}
+					]
+				},
+				"status": {
+					"type": "string"
+				},
+				"userLoginEmail": {
+					"type": "string"
+				}
+			},
+			"required": [
+				"loginStatus",
+				"password",
+				"roleIds",
+				"status",
+				"userLoginEmail"
+			]
+		},
+		"userMiddleName": {
+			"type": "string"
+		},
+		"userPhoneNumber": {
+			"type": "integer"
+		},
+		"userRoleMaps": {
+			"type": "array",
+			"items": [
+				{
+					"type": "object",
+					"properties": {
+						"roleId": {
+							"type": "string"
+						},
+						"userRoleStatus": {
+							"type": "string"
+						}
+					},
+					"required": [
+						"roleId",
+						"userRoleStatus"
+					]
+				}
+			]
+		},
+		"userTimeZone": {
+			"type": "string"
+		},
+		"userVisaStatus": {
+			"type": "string"
+		}
+	},
+	"required": [
+		"userComments",
+		"userEduPg",
+		"userEduUg",
+		"userFirstName",
+		"userLastName",
+		"userLinkedinUrl",
+		"userLocation",
+		"userLogin",
+		"userMiddleName",
+		"userPhoneNumber",
+		"userRoleMaps",
+		"userTimeZone",
+		"userVisaStatus"
+	]
+}
