@@ -1,0 +1,92 @@
+{
+	"CreateProgramId": {
+		"programDescription":"TestingAPI",
+		"programName":"ApiAutoamators891" ,
+		"programStatus":"Active"
+		 
+	},
+	"UpdateProgramId":{
+		 
+  		"programDescription": "TestingAPIRestAssureds",
+  		"programName": "Api3211AutomatorS893",
+  		"programStatus": "Active"
+ 
+	},
+	"UpdateProgramName":{
+		 
+  		"programDescription": "TestingApiRestureqq",
+  		"programName": "ApiAutoamators894",
+  		"programStatus": "Active"
+ 
+	},
+	"ExistingProgramName": {
+		"programDescription":"Testsasa",
+		"programName":"ApiAutoamators891",
+		"programStatus":"Active"
+		 
+	},
+	"InvalidRequestBody":{
+		"programDescription":11833,
+		"programName":1733,
+		"programStatus":193113
+	},
+	"MissingBodyvalues":{
+		"programDescription": 12323,
+		"programName": "",
+		"programStatus":"Active"
+	},
+	"MissingAdditionalField": {
+		 "programDescription": "", 
+		"programName":"fdfsdsdd" ,
+		"programStatus":"Active"
+		 
+	},
+	"MissingProgramNameandStatus":{
+		 
+  		"programDescription": "tepydyy",
+  		"programName": "",
+  		"programStatus": ""
+ 
+	},
+	"InvalidProgramName":{
+		 
+  		"programDescription": 123777145,
+  		"programName": 122136,
+  		"programStatus": 13415
+ 
+	},
+	"InvalidProgramDescription":{
+		 
+  		"programDescription": 12347753,
+  		"programName": "APiAutomator765540",
+  		"programStatus": "Active"
+ 
+	},
+	"ProgramStatus":{
+	"programDescription": "TestingAPI",
+  		"programName": "ApiAutoamators891",
+  		"programStatus": "active"
+	},
+	"InvalidProgramId":{
+		 
+  		"programDescription": 9239,
+  		"programName": 7638,
+  		"programStatus": 42324
+ 
+	}
+	 
+	
+	
+	 
+	 
+
+
+
+
+
+
+
+
+
+
+}
