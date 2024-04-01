@@ -1,7 +1,8 @@
 package com.api.stepdefinition;
 
 import static io.restassured.RestAssured.given;
- 
+
+import java.io.FileNotFoundException;
 
 import org.json.JSONObject;
 import org.junit.Assert;
@@ -34,7 +35,7 @@ public class PC_createProgramID extends BaseTest{
 	  RequestSpecification request;
 	
 	@Given("Admin creates POST Request for the LMS with request body")
-	public void admin_creates_post_request_for_the_lms_with_request_body() {
+	public void admin_creates_post_request_for_the_lms_with_request_body() throws FileNotFoundException {
 		  request = given().spec(CommonSpec()).body(JsonReader.getRequestBody(jsonFileName,jsonKey));
 	}
 
@@ -43,13 +44,13 @@ public class PC_createProgramID extends BaseTest{
 		 
 		 
 			response = request
-					.header("Authorization", "Bearer "+tk.getToken())
+					.header("Authorization", "Bearer "+PC_token.getToken())
 					 .when()
 					.post(Endpoint).then().log().all().extract().response();
 			
 			 
 			
-	 PC_CreateProgramIDPojos pojo = ResponseHandler.deserializedResponse(response,PC_CreateProgramIDPojos.class);
+	// PC_CreateProgramIDPojos pojo = ResponseHandler.deserializedResponse(response,PC_CreateProgramIDPojos.class);
 	 
 	}
 

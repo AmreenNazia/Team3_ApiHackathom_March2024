@@ -4,8 +4,17 @@
 		"programName":"ApiAutomators1111" ,
 		"programStatus":"Active"
 		 
-	}
+	},
 
+	"Create New Batch":{
+		"batchDescription": "SDET Batch",
+		"batchId": 0,
+		"batchName": "SDET",
+		"batchNoOfClasses": 20,
+		"batchStatus": "Active",
+		"programId": 16376,
+		"programName": "API_Validators_122"
+	  }
 
 
 
