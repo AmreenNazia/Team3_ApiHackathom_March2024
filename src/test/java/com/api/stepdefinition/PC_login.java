@@ -2,6 +2,8 @@ package com.api.stepdefinition;
 
 import static io.restassured.RestAssured.given;
 
+import java.io.FileNotFoundException;
+
 import org.json.JSONObject;
 
 import com.api.models.PC_token;
@@ -33,7 +35,7 @@ public class PC_login extends BaseTest{
 	}
 
 	@When("Admin calls Post Https method  with valid endpoint")
-	public void admin_calls_post_https_method_with_valid_endpoint() {
+	public void admin_calls_post_https_method_with_valid_endpoint() throws FileNotFoundException {
 		response =  given()
 				 .spec(CommonSpec())
 				 .body(credentials.toString())
@@ -59,6 +61,34 @@ public class PC_login extends BaseTest{
 	 	 
 	     
 	}
+	@When("Admin calls Post Https method  with invalid endpoint")
+	public void admin_calls_post_https_method_with_invalid_endpoint() throws FileNotFoundException {
+		response =  given()
+				 .spec(CommonSpec())
+				 .body(credentials.toString())
+				.when()
+				.post("/log");
+	}
+
+	@Then("Admin receives {int} unauthorized")
+	public void admin_receives_unauthorized(Integer int1) {
+		int statusCode = response.getStatusCode();
+		Assert.assertEquals("Statuscode is not Equal", statusCode, 401);
+	}
+
+	@Given("Admin creates request with invalid credentials")
+	public void admin_creates_request_with_invalid_credentials() {
+		credentials = new JSONObject();
+		credentials.put("userLoginEmailId", "numpy@gmail.com");
+		credentials.put("password",123 );
+	}
+
+	@Then("Admin receives {int} Bad request")
+	public void admin_receives_bad_request(Integer int1) {
+		int statusCode = response.getStatusCode();
+		Assert.assertEquals("Statuscode is not Equal", statusCode, 400);
+	}
+
 	
 
 

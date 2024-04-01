@@ -4,6 +4,7 @@ import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 
 import org.json.simple.JSONObject;
 import com.api.models.PC_token;
@@ -27,9 +28,10 @@ public class UC_PostRequestStep extends BaseTest{
 	RequestSpecification request;
 	Response response;
 	public int statusCode;
+	public static String userID ;
 	
 	@Given("Authorized Admin creates POST request with valid request body.")
-	public void authorized_admin_creates_post_request_with_valid_request_body() {
+	public void authorized_admin_creates_post_request_with_valid_request_body() throws FileNotFoundException {
 		
 		  JSONObject jsonobj = new JSONObject();
 		  request = given().header("Authorization", "Bearer "+PC_token.getToken()).
@@ -40,7 +42,10 @@ public class UC_PostRequestStep extends BaseTest{
 	public void authorized_admin_send_valid_post_api_request() {
 		response = request
 				.when()
-				.post("/users/roleStatus").then().log().all().extract().response();
+				.post("/users/roleStatus");
+		userID = response.path("userId");
+		System.out.println(userID);
+		 
 	}
 
 	@Then("Authorized admin receive {int} status with response body")
@@ -54,7 +59,7 @@ public class UC_PostRequestStep extends BaseTest{
 	
 
 	@Given("Authorized admin user create post request with invalid request body")
-	public void authorized_admin_user_create_post_request_with_invalid_request_body() {
+	public void authorized_admin_user_create_post_request_with_invalid_request_body() throws FileNotFoundException {
 		
 		  JSONObject jsonobj = new JSONObject();
 		  request = given().

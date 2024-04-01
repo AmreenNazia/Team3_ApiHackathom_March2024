@@ -1,0 +1,116 @@
+{
+	"Create New Batch":{
+		"batchDescription": "SDET Batch",
+		"batchName": "API_testers-215",
+		"batchNoOfClasses": 20,
+		"batchStatus": "Active"
+		 
+		 
+	},
+	  "Create New Batch Missing Field":{
+		"batchName": "API_testers-213",
+		"batchNoOfClasses": 10,
+		"batchStatus": "Active",
+		"programId": 16376
+	  },
+	  "Create Missing Mandatory":[{
+		"batchDescription": "SDET Batch",
+		"batchNoOfClasses": 20,
+		"batchStatus": "Active",
+		"programId": 16376,
+		"programName": "API_Validators_122"
+	  },
+	  {
+		"batchDescription": "SDET Batch",
+		"batchName": "API_testers-SDET-18",
+		"batchNoOfClasses": 20,
+		"batchStatus": "Active",
+		"programName": "API_Validators_122"
+	  },
+	  {
+		"batchDescription": "SDET Batch",
+		"batchName": "API_testers-SDET-18",
+		"batchNoOfClasses": 20,
+		"programId": 16376,
+		"programName": "API_Validators_122"
+	  },
+	  {
+		"batchDescription": "SDET Batch",
+		"batchName": "API_testers-SDET-18",
+		"batchStatus": "Active",
+		"programId": 16376,
+		"programName": "API_Validators_122"
+	  }],
+	  "Invalid Data":{
+		"batchName": "API_Validators",
+		"batchNoOfClasses": 12,
+		"batchStatus": "123",
+		"programId": 17422
+	  },
+	  
+		"Inactive programID":{
+		"batchName": "API_testers-SDET-18",
+		"batchNoOfClasses": 20,
+		"batchStatus": "Active",
+		"programId": 17422,
+		"programName": "API_Validators_122"
+	  },
+	  "Update Valid Data":{
+			"batchDescription": "Update batch ",
+			"batchName": "Updated Batch Name API-016",
+			"batchNoOfClasses": 30,
+			"batchStatus": "Inactive",
+			"programId":16263 ,
+			"programName": "string"
+		  },
+	    "Missing mandatory Update":[
+			
+		  {
+			"batchDescription": "Update batch ",
+			"batchNoOfClasses": 30,
+			"batchStatus": "inactive",
+			"programId":16263 ,
+			"programName": "string"
+		  },
+		  {
+			"batchDescription": "Update batch ",
+			"batchName": "Updated Batch Name API-011",
+			"batchStatus": "inactive",
+			"programId":16263 ,
+			"programName": "string"
+		  },
+		  {
+			"batchDescription": "Update batch ",
+			"batchName": "Updated Batch Name API-011",
+			"batchNoOfClasses": 30,
+			"programId":16263 ,
+			"programName": "string"
+		  },
+		  {
+			"batchDescription": "Update batch ",
+			"batchName": "Updated Batch Name API-011",
+			"batchNoOfClasses": 30,
+			"batchStatus": "inactive",
+			"programName": "string"
+		  },
+		  {
+		  "batchName": "Updated Batch Name API-011",
+			"batchNoOfClasses": 30,
+			"batchStatus": "inactive",
+			"programId":16263 
+			
+		  }
+		],
+		"Update with deleted programId":{
+			"batchDescription": "Update batch ",
+			"batchName": "Updated Batch Name API-011",
+			"batchNoOfClasses": 30,
+			"batchStatus": "inactive",
+			"programId":16225 ,
+			"programName": "string"
+		  }
+		
+			
+
+}
+

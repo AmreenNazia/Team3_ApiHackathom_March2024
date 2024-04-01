@@ -1,0 +1,1 @@
+{"uuid":"c2c421e1-8103-4074-b4ae-89bc52b55614","name":"Scenario: Check if admin able to create a Batch with valid endpoint and request body","children":["15cf9c26-8dfe-4f95-b370-023e7a06927a"],"befores":[],"afters":[],"start":1711995837458,"stop":1711995837918}
