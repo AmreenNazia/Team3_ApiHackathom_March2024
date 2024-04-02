@@ -1,0 +1,1 @@
+{"uuid":"862acc8e-af08-4d09-b4ac-d3159b709727","name":"Scenario: Check if Admin able to retrieve all programs with valid Endpoint","children":["db4bc643-a5b5-49ee-9d50-37965b1efcfa"],"befores":[],"afters":[],"start":1712028838698,"stop":1712028839337}

@@ -1,0 +1,1 @@
+{"uuid":"8c6eb0ae-8119-4328-9bbc-794226501c97","name":"Scenario: Check if user able to logout with token and valid credential","children":["633e104a-5418-4945-b9c6-a914c34f064e"],"befores":[],"afters":[],"start":1712029543376,"stop":1712029543799}

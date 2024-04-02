@@ -72,7 +72,7 @@ public class UC_GetUsers extends BaseTest{
 	public void user_sends_https_request_with_getadminbyprogram_id() {
 		
 		response = request.header("Authorization", "Bearer " + PC_token.getToken()).when()
-				.get(PropertiesFile.getProperty("getadminbyprogrambatchId")+pojo.getProgramId())
+				.get(PropertiesFile.getProperty("getadminbyprogrambatchId")+Batch_SD.programID)
 				.then().log().all().extract().response();
 	     
 	}

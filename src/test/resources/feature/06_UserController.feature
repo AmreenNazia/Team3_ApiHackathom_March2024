@@ -27,6 +27,11 @@ Scenario: Admin is able to get admin by program batchId
 Given Users creates Get user request 
 When Users sends https request with getadminbyprogrambatchId
 Then Users receives 200 ok. 
+@updateuser
+Scenario: Admin is able to update user roleId
+Given Users creates request with valid response body "UpdateUserRoleId"
+When Users sends https put request with updateuserroleId
+Then users receives the 200 ok.
 
 Scenario: Admin is able to get admin by programId
 Given Users creates Get user request 
@@ -82,17 +87,7 @@ Given Users creates request with valid response body "UpdateUserLoginStatus"
 When Users sends https put request with updateuserloginstatus
 Then users receives the 200 ok. 
 
-@updateuser
-Scenario: Admin is able to update user roleId
-Given Users creates request with valid response body "UpdateUserRoleId"
-When Users sends https put request with updateuserroleId
-Then users receives the 200 ok.
 
 
 
-#@deleteuser
-#Scenario: Admin is able to delete user 
-#Given Users creates delete request 
-#When Users sends delete request with deleteuser
-#Then users receives 200 ok. 
-#
+

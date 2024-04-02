@@ -1,0 +1,1 @@
+{"uuid":"1ea327d4-2f65-4104-956d-e1b1962fe265","name":"Scenario: Check if admin able to create a batch with missing additional fields","children":["783a65e8-a9c4-46a9-9fcd-74a351307ac5"],"befores":[],"afters":[],"start":1712015178519,"stop":1712015179002}

@@ -1,0 +1,1 @@
+{"uuid":"b6d4bd5f-134a-4eff-9de8-f3d79d93f388","name":"Scenario: Check if admin able to retrieve a batch with valid Program ID","children":["a46b9a0b-1f08-4845-af34-db4e69d8553a"],"befores":[],"afters":[],"start":1712025784819,"stop":1712025785247}

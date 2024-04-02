@@ -1,6 +1,7 @@
 package com.api.stepdefinition;
 
 import static io.restassured.RestAssured.*;
+
 import static org.junit.Assert.assertEquals;
 import java.io.FileNotFoundException;
 
@@ -9,6 +10,8 @@ import org.json.JSONObject;
 import com.api.models.Batch_Payload;
 import com.api.models.PC_CreateIDPojo;
 import com.api.models.PC_token;
+import com.api.models.UserStatus;
+import com.api.models.userUpdateRole;
 import com.api.utils.API_Path;
 import com.api.utils.BaseTest;
 import com.api.utils.JsonReader;
@@ -31,6 +34,8 @@ public class Batch_SD extends BaseTest {
 	public static int programID;
     public  Batch_Payload batch1=new Batch_Payload();
     public PC_CreateIDPojo pojo = new PC_CreateIDPojo();
+ 
+     
      
     JSONObject data;
     JSONObject data1;
@@ -44,7 +49,7 @@ public class Batch_SD extends BaseTest {
 		data.put("programId",pojo.getProgramId());
 		data.put("programName",PC_PositiveStepDefinitions.Programname );
 		data.put("batchDescription","SDET Batch");
-		data.put("batchName","API_testers-364");
+		data.put("batchName","API_testers-767");
 		data.put("batchNoOfClasses", 20);
 		data.put("batchStatus","Active");
 		
@@ -62,8 +67,13 @@ public class Batch_SD extends BaseTest {
 				          .post(API_Path.apiPath.createBatch)
 				          .then().log().all().extract().response();
 		  batchID = response.path("batchId");
+		  
 		  programID = response.path("programId");
 	   Batch_Payload batch1=ResponseHandler.deserializedResponse(response, Batch_Payload.class);
+	   
+	   
+	   
+	   
 	 
 
 	}
@@ -146,7 +156,7 @@ public class Batch_SD extends BaseTest {
 //			.body(JsonReader.getRequestBody(jsonFileName, jsonKey))
 			data = new JSONObject();
 			data.put("programId",pojo.getProgramId());
-			data.put("batchName","API_testers-415");
+			data.put("batchName","API_testers-466");
 			data.put("batchNoOfClasses", 20);
 			data.put("batchStatus","Active");
 			request = given().spec(CommonSpec()).body(data.toString())
@@ -467,7 +477,7 @@ public class Batch_SD extends BaseTest {
 		System.out.println(programID);
 		data1 = new JSONObject();
 		data1.put("batchDescription","SDET BatchUpdates");
-		data1.put("batchName","API_testers-515");
+		data1.put("batchName","API_testers-600");
 		data1.put("batchNoOfClasses", 20);
 		data1.put("batchStatus","Active");
 		data1.put("programId",programID);
