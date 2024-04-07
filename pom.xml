@@ -5,13 +5,13 @@
 	<groupId>Team03_APIAutomators_March2024</groupId>
 	<artifactId>Team03_APIAutomators_March2024</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-<!-- <properties>
+<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>16</maven.compiler.source>
 		<maven.compiler.target>16</maven.compiler.target>
 		<!-- <maven.compiler.release>18</maven.compiler.release>-->
 	</properties>
- -->
+
 	<dependencies>
 
 		<dependency>
